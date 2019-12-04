@@ -6,6 +6,7 @@ const { getMember, formatDate } = require("./functions.js");
 const { stripIndents } = require("common-tags");
 const fs = require('fs');   
 const { promptMessage } = require("./functions.js");
+const token = process.env.token;
 
 
 client.on('ready', () => {
@@ -370,5 +371,5 @@ client.on('message', message => {
     }
         });
 
-client.login(process.env.token);
+client.login(token);
 
