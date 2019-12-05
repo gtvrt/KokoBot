@@ -10,7 +10,6 @@ const token = process.env.token;
 
 
 client.on('ready', () => {
-  process.env.fortnite;
   console.clear();
   console.log(`Connected as ${client.user.tag} -- ${client.user.id}`);
   console.log("Ready...\n");
